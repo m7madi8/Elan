@@ -1204,6 +1204,84 @@ a {
   opacity: 1;
 }
 
+@media (min-width: 992px) {
+  .product-carousel .swiper-wrapper {
+    align-items: flex-start;
+  }
+
+  .product-carousel .swiper-slide,
+  .product-carousel .product-item,
+  .product-carousel .image-holder {
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  body {
+    --bs-body-font-size: 16px;
+  }
+
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2.4rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 2rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1.5rem;
+  }
+
+  h5,
+  .h5 {
+    font-size: 1.15rem;
+  }
+
+  h6,
+  .h6 {
+    font-size: 1rem;
+  }
+
+  .site-logo {
+    font-size: 1.8rem;
+  }
+
+  .background {
+    height: 360px;
+  }
+
+  .title-xlarge {
+    font-size: clamp(1.6rem, 8vw, 3rem);
+    top: -10px;
+  }
+
+  .collection .collection-content {
+    padding: 2rem !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .title-xlarge {
+    display: none;
+  }
+
+  .search-popup input[type="search"] {
+    font-size: 18px;
+    height: 50px;
+    padding: 18px;
+  }
+}
+
 /* rotating text */
 .text-rotate {
   animation: rotation 50s infinite linear;
